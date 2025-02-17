@@ -12,11 +12,15 @@ import Anchor from "./anchor";
 
 const NAVLINKS_RESOURCES = [
     {
+        title: "Community",
+        href: '/resources/community',
+    },
+    {
         title: "Middleware",
         href: '/resources/middleware',
     },
     {
-        title: "Lithe Modules",
+        title: "Modules",
         href: '/resources/modules',
     },
 ];

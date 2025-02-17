@@ -1,6 +1,6 @@
 ---
-title: Creating an Application
-description: Learn how to create your first application with Lithe.
+title: Creating an Application  
+description: Learn how to create your first application with Lithe.  
 ---
 
 ## Instantiating the Application
@@ -15,15 +15,15 @@ $app->get('/', function ($req, $res) {
 });
 ```
 
-The `App` class is the main interface for configuring and managing your Lithe application. It centralizes the application's configuration and management, making it easy to create and organize your web application efficiently.
+The `App` class is the main interface for configuring and managing your Lithe application. It centralizes the configuration and management of the application, making it easier to create and organize your web application efficiently.
 
 ---
 
 ## Running the Application
 
-To make your application work, you need to call the `listen` method:
+For your application to work, you need to call the `listen` method:
 
-```php
+```php {7}
 $app = new \Lithe\App;
 
 $app->get('/', function ($req, $res) {
@@ -33,7 +33,7 @@ $app->get('/', function ($req, $res) {
 $app->listen(); 
 ```
 
-The `listen` method is responsible for starting the application and listening for incoming requests. After configuring all routes and registering the necessary resources, calling `listen` makes the application start processing and responding to client requests.
+The `listen` method is responsible for starting the application and listening for incoming requests. After configuring all routes and registering necessary resources, calling `listen` causes the application to begin processing and responding to client requests.
 
 ---
 
@@ -47,13 +47,13 @@ To test your application locally, you need to have PHP installed on your system.
 php line serve
 ```
 
-This will start the server on the default port `8000`. If you want to specify a different port, you can use the optional `PORT` parameter. For example, to start the server on port `9000`, use:
+This will start the server on the default port `8000`. If you wish to specify a different port, you can use the optional `PORT` parameter. For example, to start the server on port `9000`, use:
 
 ```bash
 php line serve 9000
 ```
 
-Access `http://localhost:9000/` in your browser to view your application in action.
+Access `http://localhost:9000/` in your browser to view your application running.
 
 ### Using Apache or Another Web Server
 
